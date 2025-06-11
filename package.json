@@ -1,0 +1,21 @@
+{
+  "name": "@byomakase/omakase-player-utils",
+  "version": "1.0.0",
+  "description": "Omakase Player utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/react/omakase-react-components",
+    "packages/plugins/time-range-selector"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:pepedigital/omakase-player-utils.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "vite": "^6.2.3"
+  }
+}

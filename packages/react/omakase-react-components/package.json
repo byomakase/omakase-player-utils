@@ -1,0 +1,35 @@
+{
+  "name": "@byomakase/omakase-react-components",
+  "version": "1.0.1",
+  "description": "Omakase Player React.js wrapped components",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.es.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "build:prod": "rm -rf dist && tsc --noEmit && vite build --mode production",
+    "publish:dry": "npm run build:prod && npm pack",
+    "publish:latest": "npm run build:prod && npm publish --access public --tag latest",
+    "publish:snapshot": "npm run build && npm publish --access public --tag snapshot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byomakase/omakase-player-utils.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "peerDependencies": {
+    "@byomakase/omakase-player": "0.18.0",
+    "react": "^18.3.1"
+  },
+  "dependencies": {
+    "decimal.js": "^10.5.0",
+    "rxjs": "^7.8.2"
+  }
+}

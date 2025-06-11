@@ -1,0 +1,41 @@
+.control-panel {
+    display: flex;
+    width: fit-content;
+    background-color: #3A3D4B;
+    height: 43px;
+
+    padding: 0.3em;
+}
+
+.control-panel button {
+    margin-left: 0.3em;
+    margin-right: 0.3em
+}
+
+.control-panel-wrapper {
+    display: flex;
+    gap: 1px;
+}
+
+.segmentation-button-wrapper {
+    min-width: fit-content;
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.segmentation-button-wrapper button {
+    white-space: nowrap;
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.segmentation-button-wrapper button svg {
+    margin-right: 5px;
+}
